@@ -1,0 +1,99 @@
+#helpButton {
+    display: none;
+}
+
+.showCompletedButton {
+    display: none;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 400;
+    src: local('FontAwesome'), url(fontawesome-webfont.woff) format('woff');
+}
+
+@import url('theme-porter.css');
+
+
+.markdown-style .children {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+}
+.markdown-style .selected .project>.name,
+.markdown-style .selected .project>.notes,
+.markdown-style .selected>.children>.project .project {
+    padding-left: 0;
+    margin-left: 0;
+}
+.markdown-style #controlsLeft {
+    left: -4em;
+}
+.markdown-style #controls #expandButton {
+    left: -3em;
+}
+.markdown-style .bullet {
+    left: -1.6em !important;
+    background: none;
+}
+
+/*title*/
+.markdown-style .selected>.name>.content {
+    font-weight: bold;
+    font-size: 100%;   
+}
+
+/*h2*/
+.markdown-style .selected>.children>.project>.name>.content {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    padding: 0;
+    border-bottom: 1px solid #efefef;
+    border-radius: 0;
+}
+
+/*h3*/
+.markdown-style .selected>.children>.project>.children .project>.name>.content {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-bottom: 0.2em;
+    padding: 0;
+}
+
+/*paragraph*/
+.markdown-style .selected>.children>.project.task>.name>.content,
+.markdown-style .selected>.children>.project>.children .project.task>.name>.content,
+.markdown-style .selected>.children>.project>.children .project>.children .project.task>.name>.content {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 1.6em;
+    padding: 0;
+    border-bottom: none;
+}
+
+.markdown-style .selected>.children>.project.task.noted>.name>.content,
+.markdown-style .selected>.children>.project>.children .project.task.noted>.name>.content,
+.markdown-style .selected>.children>.project>.children .project>.children .project.task.noted>.name>.content {
+    margin-bottom: 0em;
+}
+
+/* h2 h3 quote */
+.markdown-style .selected>.children>.project>.notes>.content,
+.markdown-style .selected>.children>.project>.children .project>.notes>.content {
+    background-color: rgba(247, 247, 247, 0.51);
+    border-left: 5px solid #efefef;
+    padding: 7px;
+    color: #777777;
+    margin-top: 0.2em;
+    margin-bottom: 1.6em;
+
+    height: initial;
+    overflow: initial;
+    display: block;
+}
+
