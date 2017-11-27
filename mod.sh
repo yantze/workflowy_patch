@@ -5,10 +5,9 @@ WFDIR=$(echo ~/Library/Application\ Support/Google/Chrome/Default/Extensions/koe
 echo "Your workflowy path:"
 echo $WFDIR
 
-cp -rf custom "$WFDIR"
-
 if [[ -s "$WFDIR/custom/custom.css" ]]; then
   echo "You had append before."
 else
-  sed -i -e '/\<\/body/r append.txt' $WFDIR/document_view.html
+  cp -rf custom "$WFDIR"
+  sed -i -e '/\<\/body/r append.txt' "$WFDIR/document_view.html"
 fi
