@@ -144,11 +144,11 @@ document.addEventListener('keydown', function(event) {
 
     if (!event.shiftKey || !event.ctrlKey) return false;
     switch(event.keyCode) {
-        case 73: // ctrl + i
+        case 73: // ctrl + shift + i
             event.preventDefault();
             expandImgTags();
             break;
-        case 84: // ctrl + t
+        case 84: // ctrl + shift + t
             event.preventDefault();
             changeTheme();
             break;
@@ -164,7 +164,7 @@ document.addEventListener('keydown', function(event) {
                 print();
             }
             break;
-        case 67: // ctrl + c
+        case 67: // ctrl + shift + c
             event.preventDefault();
             var noText = window.getSelection().isCollapsed;
             if (noText) {
@@ -173,7 +173,7 @@ document.addEventListener('keydown', function(event) {
                 copyToClipbard(wfOrigin + wfId);
             }
             break;
-        case 71: // ctrl + e
+        case 71: // ctrl + shift + g
             event.preventDefault();
             focusLastNode();
             break;
