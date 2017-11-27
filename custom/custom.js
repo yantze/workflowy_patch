@@ -140,9 +140,9 @@ $('body').delegate('.contentTag','click', function(event) {
 });
 
 
-document.addEventListener('keyup', function(event) {
-    
-    if (!event.ctrlKey) return false;
+document.addEventListener('keydown', function(event) {
+
+    if (!event.shiftKey || !event.ctrlKey) return false;
     switch(event.keyCode) {
         case 73: // ctrl + i
             event.preventDefault();
@@ -173,7 +173,7 @@ document.addEventListener('keyup', function(event) {
                 copyToClipbard(wfOrigin + wfId);
             }
             break;
-        case 69: // ctrl + e
+        case 71: // ctrl + e
             event.preventDefault();
             focusLastNode();
             break;
