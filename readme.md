@@ -4,6 +4,9 @@
 Simple Workflowy Layout, theme and add hotkey.
 
 ## Install
+You **MUST** install Workflowy Chrome version first:
+
+https://chrome.google.com/webstore/detail/workflowy/koegeopamaoljbmhnfjbclbocehhgmkm
 ```
 git clone https://github.com/yantze/workflowy_patch
 cd workflowy_patch
