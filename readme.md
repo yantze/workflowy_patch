@@ -21,15 +21,15 @@ Restart Workflowy app
 - Markdown
 
 ## Add Hotkey
-- Go to end of file: Ctrl+Shift+G
-- Change theme: Ctrl+Shift+T
-- Change to Markdown: Ctrl+shift+M
-- Print: Ctrl+Shift+P
-- Copy current Node web url: Ctrl+Shift+C
+- Go to end of file: <kbd>Ctrl+Shift+G</kbd>
+- Change theme: <kbd>Ctrl+Shift+T</kbd>
+- Change to Markdown: <kbd>Ctrl+shift+M</kbd>
+- Print: <kbd>Ctrl+Shift+P</kbd>
+- Copy current Node web url: <kbd>Ctrl+Shift+C</kbd>
 
-## Recommand Hotkey
-- Go to end of line: Ctrl+e
-- Next/Before line: Ctrl+n/p
+## Recommand Hotkey (default hotkey)
+- Go to end of line: <kbd>Ctrl+e</kbd>
+- Next/Before line: <kbd>Ctrl+n/p</kbd>
 
 ## ScreenShot
 
