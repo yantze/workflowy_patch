@@ -141,8 +141,20 @@ $('body').delegate('.contentTag','click', function(event) {
 
 
 document.addEventListener('keydown', function(event) {
+    if (!event.ctrlKey) return false;
+    switch(event.keyCode) {
+        case 189:
+            $('#backwardNavigationButton').trigger('click');
+            return;
+            break;
+        case 187:
+            $('#forwardNavigationButton').trigger('click');
+            return;
+            break;
+    }
 
-    if (!event.shiftKey || !event.ctrlKey) return false;
+
+    if (!event.shiftKey) return false;
     switch(event.keyCode) {
         case 73: // ctrl + shift + i
             event.preventDefault();
