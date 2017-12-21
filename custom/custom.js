@@ -47,6 +47,14 @@ function focusLastNode() {
     $(".name:last").children(".content").focus()
 }
 
+function focusFirstNode() {
+    $('.mainTreeRoot>.children>.project:first-child>.name>.content').focus()
+}
+
+function collapseParentNode() {
+    $(':focus').parents('.children:first').siblings('.name')
+}
+
 function addGlobalStyle(css) {
     var head, style;
     head = document.getElementsByTagName('head')[0];
@@ -151,6 +159,10 @@ document.addEventListener('keydown', function(event) {
             $('#forwardNavigationButton').trigger('click');
             return;
             break;
+        case 71: // ctrl + g
+            event.preventDefault();
+            focusFirstNode();
+            break;
     }
 
 
@@ -188,6 +200,18 @@ document.addEventListener('keydown', function(event) {
         case 71: // ctrl + shift + g
             event.preventDefault();
             focusLastNode();
+            break;
+        case 71: // ctrl + shift + g
+            event.preventDefault();
+            focusLastNode();
+            break;
+        case 38: // Up
+            event.preventDefault();
+            collapseParentNode();
+            break;
+        case 40: // Down
+            event.preventDefault();
+            // expandAllNode();
             break;
     }
 });
