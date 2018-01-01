@@ -26,8 +26,8 @@ Restart Workflowy app
 - Change to Markdown: <kbd>Ctrl+shift+M</kbd>
 - Print: <kbd>Ctrl+Shift+P</kbd>
 - Copy current Node web url: <kbd>Ctrl+Shift+C</kbd>
-- Go Back: <kbd>Ctrl + -</kbd>
-- Go Forward: <kbd>Ctrl + +</kbd>
+- Go Back: <kbd>Ctrl + -</kbd>, <kbd>Command + [</kbd>
+- Go Forward: <kbd>Ctrl + +</kbd>, <kbd>Command + ]</kbd>
 
 ## Recommand Hotkey (default hotkey)
 - Go to end of line: <kbd>Ctrl+e</kbd>
