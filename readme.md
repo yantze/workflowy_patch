@@ -41,3 +41,9 @@ Restart Workflowy app
 
 ### Markdown
 ![theme-markdown](./screenshot/theme-markdown.png)
+
+
+## Tips（中文）
+如果要查找 Workflowy 中英文或者数字中的一部分，直接输入是找不到的
+
+比如我搜索 Application，那么 launchApplication 就不会被搜索到，而是要输入`"Application"` 才行
