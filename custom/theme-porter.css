@@ -205,3 +205,12 @@ div.project.open.selected > div.children > div.open > div.notes {
     top: 30px;
     bottom: auto;
 }
+
+
+/* new */
+.notes {
+    font-family: courier new, monospace;
+}
+
+/* new end */
+
